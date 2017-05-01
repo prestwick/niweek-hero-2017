@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <!---Read only section. Source panel edits to these document properties will not be persisted-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Main</title>
+        <!---End read only section. Additional scripts or document properties can be added outside this section-->
+
+        
+        <link href="ni-webvi-resource-v0/favicon.ico" type="image/x-icon" rel="icon">
+<link href="ni-webvi-resource-v0/jsResources/jqwidgets/styles/jqx.base.css" type="text/css" rel="stylesheet">
+<link href="ni-webvi-resource-v0/jsResources/jqwidgets/styles/jqx.ni.css" type="text/css" rel="stylesheet">
+<link href="ni-webvi-resource-v0/jsResources/jqwidgets/styles/jqx.fresh.css" type="text/css" rel="stylesheet">
+<link href="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/styles/jqx.base.css" type="text/css" rel="stylesheet">
+<link href="ni-webvi-resource-v0/Web/Styles/niNormalize.css" type="text/css" rel="stylesheet">
+<link href="ni-webvi-resource-v0/Web/Styles/niIconStyles.css" type="text/css" rel="stylesheet">
+<link href="ni-webvi-resource-v0/Web/Styles/niControlStyles.css" type="text/css" rel="stylesheet">
+<script defer="" src="ni-webvi-resource-v0/Web/dist/niBase.min.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxnumericprocessor.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxnumberrenderer.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxmath.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxbutton.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxswitchbutton.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxpowerbutton.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxled.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxcheckbox.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxnumerictextbox.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxprogressbar.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxtank.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxslider.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/jsResources/jqx-elements/source-minified/jqxtickintervalhandler.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/Web/dist/niThirdPartyResources.min.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/Web/dist/niElements.min.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/Web/dist/niModelsAndViewModels.min.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/node_modules/vireo/dist/vireo.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/node_modules/vireo/source/core/module_coreHelpers.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/node_modules/vireo/source/io/module_eggShell.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/node_modules/vireo/source/io/module_httpClient.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/node_modules/vireo/source/core/vireo.loader.js" type="text/javascript"></script>
+<script defer="" src="ni-webvi-resource-v0/Web/dist/niRegistration.min.js" type="text/javascript"></script>
+<style>
+		[data-ni-base-style] {position: absolute;}
+
+		ni-label[ni-control-id='64'] {
+			left: 1203px; top: 463px; width: 96px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-circular-progress-bar[ni-control-id='62'] {
+			left: 1203px; top: 483px; width: 218px; height: 218px; 
+		}
+		ni-label[ni-control-id='54'] {
+			left: 1203px; top: 230px; width: 81px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-circular-progress-bar[ni-control-id='52'] {
+			left: 1203px; top: 250px; width: 218px; height: 218px; 
+		}
+		ni-label[ni-control-id='49'] {
+			left: 1203px; top: -3px; width: 81px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-circular-progress-bar[ni-control-id='48'] {
+			left: 1203px; top: 17px; width: 218px; height: 218px; 
+		}
+		ni-url-image[ni-control-id='28'] {
+			left: 100px; top: 4px; width: 1064px; height: 712px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='29'] {
+			left: 100px; top: -16px; width: 58px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-led[ni-control-id='51'] {
+			left: 1224px; top: 272px; width: 178px; height: 178px; font-size: 37px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='53'] {
+			left: 1224px; top: 252px; width: 32px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-led[ni-control-id='61'] {
+			left: 1224px; top: 504px; width: 178px; height: 178px; font-size: 37px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='63'] {
+			left: 1224px; top: 484px; width: 32px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-led[ni-control-id='41'] {
+			left: 1224px; top: 39px; width: 178px; height: 178px; font-size: 37px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='42'] {
+			left: 1224px; top: 19px; width: 32px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		ni-data-grid[ni-control-id='144'] {
+			left: 1207px; top: 724px; width: 210px; height: 260px; font-size: 27px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-string-control[ni-control-id='146'] {
+			font-size: 27px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		jqx-numeric-text-box[ni-control-id='151'] {
+			font-size: 27px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		jqx-led[ni-control-id='205'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='147'] {
+			left: 1207px; top: 704px; width: 60px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		ni-cartesian-graph[ni-control-id='175'] {
+			left: 100px; top: 724px; width: 1064px; height: 262px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		ni-cartesian-axis[ni-control-id='176'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-cartesian-axis[ni-control-id='177'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-cartesian-plot[ni-control-id='178'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-scale-legend[ni-control-id='182'] {
+			left: 1163px; top: 924px; width: 145px; height: 60px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-plot-legend[ni-control-id='183'] {
+			left: 1163px; top: 724px; width: 145px; height: 28px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-cursor-legend[ni-control-id='184'] {
+			left: 100px; top: 985px; width: 320px; height: 202px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-graph-tools[ni-control-id='185'] {
+			left: 102px; top: 726px; width: 120px; height: 30px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='186'] {
+			left: 100px; top: 704px; width: 51px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+
+	</style><style>
+                body {
+                background-color: #e7e7e7;
+            }
+            
+            ni-url-image {
+                box-shadow: 5px 10px 21px -6px rgba(118, 118, 118, 1);
+            }
+            
+            jqx-circular-progress-bar {
+                box-shadow: 5px 10px 21px -6px rgba(118, 118, 118, 1);
+            }
+            
+            ni-cartesian-graph {
+                box-shadow: 5px 10px 21px -6px rgba(118, 118, 118, 1);
+            }
+            
+            ni-data-grid {
+                box-shadow: 5px 10px 21px -6px rgba(118, 118, 118, 1);
+            }
+            
+            ni-string-control[read-only] .ni-text-field {
+                text-align: center;
+                padding-top: 15px;
+            }
+            
+            .jqx-widget-header {
+                background: #FFFFFF;
+            }
+            
+            jqx-circular-progress-bar .jqx-value {
+                stroke: #FFC82E;
+            }
+            
+           
+            
+            jqx-led .jqx-true-content-container {
+                background-color: #0070bc;
+                color: white;
+            }
+            
+            jqx-led .jqx-false-content-container {
+                background-color: #FF5F2E;
+                color: white;
+            }
+            
+            jqx-led[disabled] {
+                opacity: 1;
+        </style><style>
+		[data-ni-base-style] {position: absolute;}
+
+		ni-label[ni-control-id='64'] {
+			left: 1203px; top: 463px; width: 96px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-circular-progress-bar[ni-control-id='62'] {
+			left: 1203px; top: 483px; width: 218px; height: 218px; 
+		}
+		ni-label[ni-control-id='54'] {
+			left: 1203px; top: 230px; width: 81px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-circular-progress-bar[ni-control-id='52'] {
+			left: 1203px; top: 250px; width: 218px; height: 218px; 
+		}
+		ni-label[ni-control-id='49'] {
+			left: 1203px; top: -3px; width: 81px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-circular-progress-bar[ni-control-id='48'] {
+			left: 1203px; top: 17px; width: 218px; height: 218px; 
+		}
+		ni-url-image[ni-control-id='28'] {
+			left: 100px; top: 4px; width: 1064px; height: 712px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='29'] {
+			left: 100px; top: -16px; width: 58px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-led[ni-control-id='51'] {
+			left: 1224px; top: 272px; width: 178px; height: 178px; font-size: 37px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='53'] {
+			left: 1224px; top: 252px; width: 32px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-led[ni-control-id='61'] {
+			left: 1224px; top: 504px; width: 178px; height: 178px; font-size: 37px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='63'] {
+			left: 1224px; top: 484px; width: 32px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		jqx-led[ni-control-id='41'] {
+			left: 1224px; top: 39px; width: 178px; height: 178px; font-size: 37px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='42'] {
+			left: 1224px; top: 19px; width: 32px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		ni-data-grid[ni-control-id='144'] {
+			left: 1207px; top: 724px; width: 210px; height: 260px; font-size: 27px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-string-control[ni-control-id='146'] {
+			font-size: 27px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		jqx-numeric-text-box[ni-control-id='151'] {
+			font-size: 27px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		jqx-led[ni-control-id='205'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='147'] {
+			left: 1207px; top: 704px; width: 60px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		ni-cartesian-graph[ni-control-id='175'] {
+			left: 100px; top: 724px; width: 1064px; height: 262px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+		ni-cartesian-axis[ni-control-id='176'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-cartesian-axis[ni-control-id='177'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-cartesian-plot[ni-control-id='178'] {
+			font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-scale-legend[ni-control-id='182'] {
+			left: 1163px; top: 924px; width: 145px; height: 60px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-plot-legend[ni-control-id='183'] {
+			left: 1163px; top: 724px; width: 145px; height: 28px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-cursor-legend[ni-control-id='184'] {
+			left: 100px; top: 985px; width: 320px; height: 202px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-graph-tools[ni-control-id='185'] {
+			left: 102px; top: 726px; width: 120px; height: 30px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; 
+		}
+		ni-label[ni-control-id='186'] {
+			left: 100px; top: 704px; width: 51px; height: 16px; font-size: 12px; font-family: Segoe UI, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; color: rgba(43,48,51,1); 
+		}
+
+	</style>
+
+    
+</head>
+
+    <body><ni-web-application engine="VIREO" location="BROWSER" vireo-source="Main.via.txt"><ni-virtual-instrument vi-name="Main.gviweb"></ni-virtual-instrument></ni-web-application>
+        <div id="ni-outdated-browser-message" style="display:none">This browser is reporting compatibility with older browser technologies that may perform poorly if it all.</div>
+        <div id="ni-failed-to-load-vireo-source" style="display:none">Unable to load required dependencies. Please verify all WebVI files are available and served using an http server or use a browser that can load files directly from the filesystem.</div>
+        <section id="FrontPanelCanvas">
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        <ni-label data-ni-base-style="uninitialized" ni-control-id='64' binding-info='{}' label-id='' class='ni-hidden' text='STN 1=3 progress'></ni-label>
+
+<jqx-circular-progress-bar data-ni-base-style="uninitialized" ni-control-id='62' binding-info='{"prop":"value","dco":6,"dataItem":"dataItem_STN13Progress","unplacedOrDisabled":false,"sync":false}' label-id='64' read-only='true' value='0' min='0' max='100'></jqx-circular-progress-bar>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='54' binding-info='{}' label-id='' class='ni-hidden' text='STN 2 progress'></ni-label>
+
+<jqx-circular-progress-bar data-ni-base-style="uninitialized" ni-control-id='52' binding-info='{"prop":"value","dco":4,"dataItem":"dataItem_STN2Progress","unplacedOrDisabled":false,"sync":false}' label-id='54' read-only='true' value='0' min='0' max='100'></jqx-circular-progress-bar>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='49' binding-info='{}' label-id='' class='ni-hidden' text='STN 1 progress'></ni-label>
+
+<jqx-circular-progress-bar data-ni-base-style="uninitialized" ni-control-id='48' binding-info='{"prop":"value","dco":2,"dataItem":"dataItem_STN1Progress","unplacedOrDisabled":false,"sync":false}' label-id='49' read-only='true' value='0' min='0' max='100'></jqx-circular-progress-bar>
+
+<ni-url-image data-ni-base-style="uninitialized" ni-control-id='28' binding-info='{"prop":"source","dco":0,"dataItem":"dataItem_URLImage","unplacedOrDisabled":true,"sync":false}' label-id='29' read-only='true' source='iStock_000008422996Large.jpg' alternate='' stretch='uniform'></ni-url-image>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='29' binding-info='{}' label-id='' class='ni-hidden' text='URL Image'></ni-label>
+
+<jqx-led data-ni-base-style="uninitialized" ni-control-id='51' binding-info='{"prop":"value","dco":3,"dataItem":"dataItem_LED_4","unplacedOrDisabled":false,"sync":false}' label-id='53' value='true' click-mode='release' true-content='&lt;span class=&apos;jqx-true-content &apos;&gt;STN2&lt;/span&gt;' false-content='&lt;span class=&apos;jqx-false-content &apos;&gt;STN2&lt;/span&gt;' shape='round' highlight='rgba(238,28,37,1)'><span class='jqx-true-content '>STN2</span><span class='jqx-false-content '>STN2</span></jqx-led>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='53' binding-info='{}' label-id='' class='ni-hidden' text='LED_4'></ni-label>
+
+<jqx-led data-ni-base-style="uninitialized" ni-control-id='61' binding-info='{"prop":"value","dco":5,"dataItem":"dataItem_LED_5","unplacedOrDisabled":false,"sync":false}' label-id='63' value='true' click-mode='release' true-content='&lt;span class=&apos;jqx-true-content &apos;&gt;STN3&lt;/span&gt;' false-content='&lt;span class=&apos;jqx-false-content &apos;&gt;STN3&lt;/span&gt;' shape='round' highlight='rgba(238,28,37,1)'><span class='jqx-true-content '>STN3</span><span class='jqx-false-content '>STN3</span></jqx-led>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='63' binding-info='{}' label-id='' class='ni-hidden' text='LED_5'></ni-label>
+
+<jqx-led data-ni-base-style="uninitialized" ni-control-id='41' binding-info='{"prop":"value","dco":1,"dataItem":"dataItem_LED_3","unplacedOrDisabled":false,"sync":false}' label-id='42' value='true' click-mode='release' true-content='&lt;span class=&apos;jqx-true-content &apos;&gt;STN1&lt;/span&gt;' false-content='&lt;span class=&apos;jqx-false-content &apos;&gt;STN1&lt;/span&gt;' shape='round' highlight='rgba(238,28,37,1)'><span class='jqx-true-content '>STN1</span><span class='jqx-false-content '>STN1</span></jqx-led>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='42' binding-info='{}' label-id='' class='ni-hidden' text='LED_3'></ni-label>
+
+<ni-data-grid data-ni-base-style="uninitialized" ni-control-id='144' binding-info='{"prop":"value","dco":7,"dataItem":"dataItem_Aggregates","unplacedOrDisabled":false,"sync":false}' label-id='147' read-only='true' value='[{"Tester":"STN1","DUTs Pass":1001,"Drive State":true},{"Tester":"STN2","DUTs Pass":867,"Drive State":false},{"Tester":"STN3","DUTs Pass":36,"Drive State":true}]' ni-type='{"name":"Array","rank":1,"subtype":{"name":"Cluster","fields":["Tester","DUTs Pass","Drive State"],"subtype":["String","Double","Boolean"]}}' column-header-visible='true' row-height='69' alt-row-colors='true' alt-row-start='1' alt-row-step='1'><ni-data-grid-column data-ni-base-style="uninitialized" ni-control-id='145' index='0' header='Tester' width='70' field-name='Tester' aggregates='{}'><ni-string-control data-ni-base-style="uninitialized" ni-control-id='146' read-only='true' binding-info='{"prop":"text","sync":false}' text=''></ni-string-control>
+</ni-data-grid-column>
+<ni-data-grid-column data-ni-base-style="uninitialized" ni-control-id='149' index='1' header='DUTs Pass' width='70' field-name='DUTs Pass' aggregates='{}'><jqx-numeric-text-box data-ni-base-style="uninitialized" ni-control-id='151' readonly='true' value='0' min='-Infinity' max='Infinity' input-format='floatingPoint' popup-enabled='true' radix='decimal' significant-digits='6' spin-buttons-step='1'></jqx-numeric-text-box>
+</ni-data-grid-column>
+<ni-data-grid-column data-ni-base-style="uninitialized" ni-control-id='202' index='2' header='Drive State' width='70' field-name='Drive State' aggregates='{}'><jqx-led data-ni-base-style="uninitialized" ni-control-id='205' readonly='true' disabled='true' click-mode='release' true-content='&lt;span class=&apos;jqx-true-content ni-hidden&apos;&gt;&lt;/span&gt;' false-content='&lt;span class=&apos;jqx-false-content ni-hidden&apos;&gt;&lt;/span&gt;' shape='square' highlight='rgba(67,134,185,1)'></jqx-led>
+</ni-data-grid-column>
+</ni-data-grid>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='147' binding-info='{}' label-id='' class='ni-hidden' text='aggregates'></ni-label>
+
+<ni-cartesian-graph data-ni-base-style="uninitialized" ni-control-id='175' binding-info='{"prop":"value","dco":8,"dataItem":"dataItem_VibeData","unplacedOrDisabled":false,"sync":false}' label-id='186' read-only='true' ni-type='{"name":"Array","rank":1,"subtype":"Double"}' value='[]' plot-area-margin='{"left":0,"top":0,"right":0,"bottom":0}'><ni-cartesian-axis data-ni-base-style="uninitialized" label='Time' show='true' ni-control-id='176' axis-position='bottom' minimum='0' maximum='100' format='LVRelativeSeconds:G6&gt;&gt;0.000E+0' show-tick-labels='all' auto-scale='exact' grid-lines='true' show-ticks='true' show-minor-ticks='true'></ni-cartesian-axis>
+<ni-cartesian-axis data-ni-base-style="uninitialized" label='mm/s^2' show='true' ni-control-id='177' axis-position='left' minimum='0' maximum='10' format='LVRelativeSeconds:G6&gt;&gt;0.000E+0' show-tick-labels='all' auto-scale='loose' grid-lines='true' show-ticks='true' show-minor-ticks='true'></ni-cartesian-axis>
+<ni-cartesian-plot data-ni-base-style="uninitialized" label='Plot' show='true' show-label='true' ni-control-id='178' xaxis='176' yaxis='177' hover-format='{0}, {1}'><ni-cartesian-plot-renderer data-ni-base-style="uninitialized" ni-control-id='181' line-width='1' line-stroke='rgba(0,112,188,1)' line-style='solid' point-color='' area-fill='' area-base-line='negativeinfinity' bar-fill='' point-size='7.0710678118654755' point-shape='ellipse'></ni-cartesian-plot-renderer>
+</ni-cartesian-plot>
+</ni-cartesian-graph>
+
+<ni-scale-legend data-ni-base-style="uninitialized" ni-control-id='182' binding-info='{"prop":"value","sync":false}' label-id='' class='ni-hidden' graph-name='175'></ni-scale-legend>
+
+<ni-plot-legend data-ni-base-style="uninitialized" ni-control-id='183' binding-info='{"prop":"value","sync":false}' label-id='' class='ni-hidden' graph-name='175'></ni-plot-legend>
+
+<ni-cursor-legend data-ni-base-style="uninitialized" ni-control-id='184' binding-info='{"prop":"value","sync":false}' label-id='' class='ni-hidden' graph-name='175'></ni-cursor-legend>
+
+<ni-graph-tools data-ni-base-style="uninitialized" ni-control-id='185' binding-info='{"prop":"value","sync":false}' label-id='' class='ni-hidden' graph-name='175'></ni-graph-tools>
+
+<ni-label data-ni-base-style="uninitialized" ni-control-id='186' binding-info='{}' label-id='' class='ni-hidden' text='vibe-data'></ni-label>
+
+</section>
+    </body>
+
+</html>

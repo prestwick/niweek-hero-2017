@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAJU47PGYQQL2G2WCQ
+  secret_access_key:
+    secure: 1GZ9aliDzNNBLHTjm2MMCpi3R/Hkepllq3m6pOsxtevfjCOzpweFka22xMGNGSQe1rV9c8009vOkYT26/sWMGEW/QTVmz25B3HwKMA5QLsoBL1qy5LyHRJoh0WcdXeiDA1q298K76rmDSvXJUbQFMuXy2j9Yyzw1/8kUhnvFCW53SREBhqmI1Ca8k4+uvn5tXEU1khpLS4V5mJYGqxaza8/XOmJJODlrP70QN2Tvu6kR8Z8WF0jhe9NsKunU3vRqkq9qu4gJw1UFXF+Bhvqh+qcXqLbQSAA/sCdJR3Or/BlYZohm/NnvaDrc9W1yoZQi0t7Ma4vctt1iVLBEhkKO6pI48VrhWl0vOXhjBHjgbm2hOPT/IuyfeVm2SIGDUvq70vKTH7+t7s3KhkuE5TD8Psm00/Jc+lzBDOy/IYA/IHLP4lNW2jjTPDDyoM74XSfmakV5jU4nmsVhqZ9bn9TZsDGmSk7NiwmHzMe2OawaRBRyRDGNY8Wb1p2nEMdmDVHNNmFhEJ0b8QHFZJPQzlhZ4gjGRirKJEbwWCHpIGXfNiUKtOpT+0VgMI1KgdSxLdiMJETA9nZwuibJo0PKKkIgW5z/TAbU99BKyT7TBkABJKQuXodR+XbrOK7tY0nfrl5pKcUw7VIVf6GBxUAU7ar0YeWzCzTA+2kJqnd9vFqwlNk=
+  bucket: webvi-example
+  local_dir: Builds/Web Server/Configuration1/WebApp
+  upload-dir: niweek-hero-2017
+  acl: public_read
+  on:
+    repo: prestwick/niweek-hero-2017
+    tags: true
